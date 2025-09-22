@@ -1,0 +1,75 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.banner {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+  .images {
+    display: flex;
+    height: 345px;
+    overflow: hidden;
+    flex-direction: column;
+
+    .img {
+      position: relative;
+      display: flex;
+      flex: 1;
+      width: 606px;
+      min-height: 345px;
+    }
+
+    .img1 {
+      background: red;
+    }
+
+    .img2 {
+      background: blue;
+    }
+
+    .img3 {
+      background: deeppink;
+    }
+
+    .img4 {
+      background: red;
+    }
+
+    .img5 {
+      background: blue;
+    }
+
+    .img6 {
+      background: deeppink;
+    }
+
+    .img7 {
+      background: red;
+    }
+
+    .img8 {
+      background: blue;
+    }
+
+    .img9 {
+      background: deeppink;
+    }
+  }
+
+  .images-one {
+
+  }
+
+  .images-two {
+
+  }
+
+  .images-three {
+
+  }
+}

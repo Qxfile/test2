@@ -1,0 +1,40 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  flex: 1;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  &__buttons {
+    display: flex;
+    gap: 1.25rem;
+    width: 100%;
+    margin-left: 2.725rem;
+    margin-top: 1.25rem;
+
+    button {
+      cursor: pointer;
+      background: #249565;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      border: none;
+      padding: 13px 20px;
+    }
+  }
+
+  &__animations {
+    width: 100%;
+  }
+}
+
+.active {
+  background: #176044 !important;
+}

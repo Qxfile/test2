@@ -1,0 +1,23 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .images {
+    position: relative;
+    width: 606px;
+    height: 345px;
+    overflow: hidden;
+
+    .img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transform: scale(1.1); // чуть увеличена, чтобы потом красиво въезжала
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.banner {
+  position: relative;
+  width: calc(606px * 3); /* общая ширина сцены: 3 * 606 */
+  height: 345px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+
+  .scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    img {
+      width: 606px;
+      height: 345px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .current { z-index: 3; } /* сверху */
+  .next    { z-index: 1; } /* под current */
+
+  .wipe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;              /* будет анимироваться до 100% */
+    overflow: hidden;
+    z-index: 4;
+    pointer-events: none;   /* не мешаем кликам */
+  }
+
+  .wipe .scene.clone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* лёгкий initial styling для плавности */
+  .next { filter: blur(8px); opacity: 0.9; }
+  .wipe .scene img { display: block; }
+}

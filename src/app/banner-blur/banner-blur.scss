@@ -1,0 +1,22 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .images {
+    position: relative;
+    width: 606px;
+    height: 345px;
+    overflow: hidden;
+
+    .img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      filter: blur(10px);
+    }
+  }
+}

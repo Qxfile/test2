@@ -1,0 +1,37 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: transparent;
+}
+
+.banner {
+  position: relative; /* важно для позиционирования канваса */
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+
+  .images {
+    display: flex;
+    height: 345px;
+    overflow: hidden;
+    flex-direction: column;
+
+    .img {
+      display: block;      /* блочный, чтобы не было флексовых сюрпризов */
+      width: 606px;
+      min-height: 345px;
+      object-fit: cover;
+      opacity: 0;          /* визуально рисуем только канвасом */
+    }
+  }
+
+  .scratch-canvas {
+    position: absolute;    /* точные координаты ставятся из TS по bbox колонок */
+    pointer-events: none;
+    z-index: 10;
+    background: transparent;
+  }
+}
